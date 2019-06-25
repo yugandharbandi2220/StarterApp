@@ -1,12 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:gravity="center">
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/text"
-            android:text="Hello world!"/>
-</LinearLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+>
+    <ImageView android:layout_width="120dp"
+               android:layout_height="120dp"
+               android:id="@+id/button_img"
+               android:src="@drawable/food"
+    />
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="100dp"
+                  android:layout_marginLeft="0dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="40%"
+                  android:id="@+id/rest_off"
+                  android:textStyle="bold"
+                  android:textSize="12dp"
+
+        android:textColor="#FFF"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="2dp"
+                  android:textSize="10dp"
+                  android:text="USE CODE: ZOMATO"
+        android:textColor="#FFF"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_toRightOf="@+id/button_img"
+                  android:layout_margin="10dp">
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/rest_name"
+                  android:layout_marginTop="0dp"
+                  android:layout_marginLeft="40dp"
+                  android:text="KFC"
+                  android:textStyle="bold"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/rest_add"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="40dp"
+                  android:text="Restaurant description goes here"
+        />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

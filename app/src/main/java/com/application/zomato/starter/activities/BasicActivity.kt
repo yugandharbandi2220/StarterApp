@@ -13,6 +13,7 @@ class BasicActivity : AppCompatActivity() {
         /**
          * Linking an xml layout to a view.
          */
+
         setContentView(R.layout.activity_basic)
     }
 }
